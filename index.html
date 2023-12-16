@@ -64,7 +64,7 @@
             
           </div>
 
-          <div style="font-size: 24px; margin-bottom: 32px">Fyy<sup>1</sup>; gswei<sup>2</sup>; chenw<sup>1</sup>; zsj<sup>1</sup>; wpw<sup>3</sup>; zyf<sup>1*</sup></div>
+          <div style="font-size: 24px; margin-bottom: 32px">Yeying Fan<sup>1</sup> Guangshun Wei<sup>2</sup> Chen Wang<sup>1</sup> Shaojie Zhuang<sup>1</sup> Wenping Wang<sup>3</sup> Yuanfeng Zhou<sup>1*</sup></div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Shandong University, China</span>
@@ -103,20 +103,15 @@
 
         <div class="content has-text-justified">
           <p>
-          We introduce Multi-view Ancestral Sampling (MAS), a method for generating consistent multi-view 2D samples of a motion sequence, enabling
-the creation of its 3D counterpart.
-MAS leverages a diffusion model trained solely on 2D data, opening opportunities to exciting and diverse fields of motion
-previously under-explored as 3D data is scarce and hard to collect. MAS works by simultaneously
-denoising multiple 2D motion sequences representing the same motion from different angles.
-Our consistency block ensures consistency across all views at each
-diffusion step by combining the individual generations into a unified 3D sequence, and projecting it back to the original views for the next iteration.
-We demonstrate MAS on 2D pose data
-acquired from videos depicting professional basketball maneuvers, rhythmic gymnastic performances featuring a ball apparatus,
-and horse obstacle course races.
-In each of these domains, 3D motion capture is arduous, and yet, MAS generates diverse and realistic 3D sequences without textual conditioning.
-As we demonstrate, our ancestral sampling-based approach offers a more natural integration with the diffusion framework compared to popular denoising optimization-based approaches, and
-avoids
-common issues such as out-of-domain sampling, lack of details and mode-collapse.
+          Tooth motion generation is an essential task in digital orthodontic treatment for precise and quick dental healthcare, which aims to generate the whole intermediate tooth motion process given the initial pathological and target ideal tooth alignments. 
+Most prior works for multi-agent motion planning problems usually result in complex solutions.
+Moreover, the occlusal relationship between upper and lower teeth is often overlooked. 
+In this paper, we propose a collaborative tooth motion diffusion model. 
+The critical insight is to remodel the problem as a diffusion process. 
+In this sense, we model the whole tooth motion distribution with a diffusion model and transform the planning problem into a sampling process from this distribution.
+We design a tooth latent representation to provide accurate conditional guides consisting of two key components: the tooth frame represents the position and posture, and the tooth latent shape code represents the geometric morphology. 
+Subsequently, we present a collaborative diffusion model to learn the multi-tooth motion distribution based on inter-tooth and occlusal constraints, which are implemented by graph structure and new loss functions, respectively. 
+Extensive qualitative and quantitative experiments demonstrate the superiority of our framework in the application of orthodontics compared with state-of-the-art methods.
           </p>
           </div>
 
@@ -142,7 +137,7 @@ common issues such as out-of-domain sampling, lack of details and mode-collapse.
 
 
 
-<section class="section hero">
+<!-- <section class="section hero">
   <h1 style="text-align: center; font-size: 40px; font-weight: bold; margin-bottom: 24px;">Citation</h1>
   <div class="container is-max-desktop">
   <div style="background: #eee; padding: 8px; border: 1px solid #ddd">
@@ -158,7 +153,7 @@ common issues such as out-of-domain sampling, lack of details and mode-collapse.
 }
   </div>
   </div>
-</section>
+</section> -->
 
 
 
